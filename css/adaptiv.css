@@ -87,3 +87,14 @@
 body.lock{
   overflow: hidden;
 }
+
+
+@media (max-width: 768px) {
+  .about__block{
+    flex-direction: column-reverse;
+  }
+  .ab_img img{
+    max-width: none;
+    max-height: 400px;
+  }
+}
