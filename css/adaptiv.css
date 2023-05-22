@@ -112,6 +112,7 @@ body.lock{
 @media (max-width: 1024px) {
   .about__block{
     flex-direction: column-reverse;
+    gap: 60px;
   }
   .about__block_content{
     max-width: none;
@@ -121,3 +122,5 @@ body.lock{
     justify-content: space-around;
   }
 }
+
+

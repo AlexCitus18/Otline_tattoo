@@ -17,8 +17,20 @@
 
 
 /*--------------------Общие стили--------------------*/
+section:first-child{
+  padding: 70px 50px;
+}
 
-
+section{
+  padding: 80px 50px 20px;
+}
+._conteiner{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 auto;
+  max-width: 1200px;
+  /*border: 3px solid rgb(255, 130, 47); */
+  color: #CACACA;
+}
 /*--------------------/Общие стили--------------------*/
 
 
@@ -96,10 +108,6 @@
 
 /*--------------------Блок 1--------------------*/
 
-section{
-  padding: 70px 50px;
-}
-
 .first_screen{   
   background: url(../img/фон\ главная2.png) no-repeat;
   background-position: center center;
@@ -112,11 +120,7 @@ section{
 }
 
 .first_screen__block{
-  color: #fff;
-  max-width: 1200px;
-  width: 100%;
-  /* height: 764px; 
-  border: 3px solid greenyellow;*/
+  
   margin: 42px auto 0;
 
   display: flex;
@@ -221,21 +225,16 @@ section{
 /*--------------------Блок 2 (о нас)--------------------*/
 
 .about__block{
-  font-family: 'Montserrat', sans-serif;
-  margin: 0 auto;
-  max-width: 1200px;
-  /*border: 3px solid rgb(255, 130, 47);*/
   color: #CACACA;
   display: flex;
-  gap: 60px;
+  gap: 100px;
 }
+
 .ab_title h2{
   font-size: 48px;
   font-weight: 600;
-  color: #92AF3E;
-  
+  color: #92AF3E;  
   padding-bottom: 20px;
-
   text-shadow: 9px 13.7px 7px rgba(0, 0, 0, 0.4);
 }
 
@@ -285,4 +284,49 @@ section{
   text-align: center;
   font-size: 16px;
 }
-/*--------------------/Блок 2 (о нас--------------------*/
+
+/*--------------------/Блок 2 (о нас)--------------------*/
+
+/*-----------------Блок 3 (преимущества)----------------*/
+
+
+.reason_b3__title h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 9px 16px 9px rgba(0, 0, 0, 0.5);
+
+  padding-bottom: 100px;
+}
+
+.reason_b3__cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+}
+
+.reason__card{
+  width: 240px;
+  text-align: center;
+}
+
+.reason__card h3{
+  color: #92AF3E;
+  padding: 20px 0;
+  font-weight: 500;
+}
+
+.reason__card p{
+  font-weight: 300;
+}
+
+@media (max-width:1280px){
+  .reason_b3__cards{
+    width: 560px;
+    margin: 0 auto;
+  }
+}
+/*-----------------/Блок 3 (преимущества)----------------*/
