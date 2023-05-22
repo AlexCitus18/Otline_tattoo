@@ -88,7 +88,7 @@ body.lock{
   overflow: hidden;
 }
 
-
+/*
 @media (max-width: 768px) {
   .about__block{
     flex-direction: column-reverse;
@@ -96,5 +96,28 @@ body.lock{
   .ab_img img{
     max-width: none;
     max-height: 400px;
+  }
+}
+*/
+
+@media (max-width: 1180px)  {
+
+  .ab_img img {
+    width: 100%;
+    min-width: 360px;
+    max-width: none;
+    height: 590px;
+  }
+}
+@media (max-width: 1024px) {
+  .about__block{
+    flex-direction: column-reverse;
+  }
+  .about__block_content{
+    max-width: none;
+    margin: auto;
+  }
+  .ab_facts {
+    justify-content: space-around;
   }
 }

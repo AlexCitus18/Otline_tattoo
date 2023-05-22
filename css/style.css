@@ -224,8 +224,8 @@ section{
   font-family: 'Montserrat', sans-serif;
   margin: 0 auto;
   max-width: 1200px;
-  border: 3px solid rgb(255, 130, 47);
-
+  /*border: 3px solid rgb(255, 130, 47);*/
+  color: #CACACA;
   display: flex;
   gap: 60px;
 }
@@ -242,13 +242,18 @@ section{
 .about__block_content{
   width: 100%;
   max-width: 653px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 15px 0 25px;
 }
 .ab_text{
   line-height: 30px;
+  margin-bottom: 50px
 }
 .ab_text p{
-  color: #CACACA;
-  font-size: 18px;
+    font-size: 18px;
 }
 
 .ab_img{
@@ -261,4 +266,23 @@ section{
   height: 100%;
 }
 
+
+.ab_facts {
+  display: flex;
+  justify-content: space-between
+}
+
+.ab_fact span:nth-child(1) {
+  display: block;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  color: #92AF3E;
+}
+
+.ab_fact span:nth-child(2) {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+}
 /*--------------------/Блок 2 (о нас--------------------*/
