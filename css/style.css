@@ -28,7 +28,7 @@ section{
   font-family: 'Montserrat', sans-serif;
   margin: 0 auto;
   max-width: 1200px;
-  /*border: 3px solid rgb(255, 130, 47); */
+ /*  border: 3px solid rgb(255, 130, 47);  */
   color: #CACACA;
 }
 /*--------------------/Общие стили--------------------*/
@@ -314,7 +314,7 @@ section{
 }
 
 .reason__card h3{
-  color: #92AF3E;
+  color: #CECECE;
   padding: 20px 0;
   font-weight: 500;
 }
@@ -329,4 +329,114 @@ section{
     margin: 0 auto;
   }
 }
+
 /*-----------------/Блок 3 (преимущества)----------------*/
+
+/*-----------------Блок 4 (мастера)----------------*/
+
+.masters_b4__title h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  
+  color: #92AF3E;  
+  padding-bottom: 80px;
+  text-shadow: 9px 13.7px 7px rgba(0, 0, 0, 0.4);
+}
+
+/*-----------------/Блок 4 (мастера)----------------*/
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+}
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child{
+  left: -22px;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 20px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 30px;
+  scroll-behavior: smooth;
+  /* scrollbar-width: none; */
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  list-style: none;
+  background: #fff;
+  flex-direction: column;
+}
+
+.card .img img {
+  object-fit: cover;
+  width: 100%;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  background-color:#92AF3E;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  color: #373737;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.carousel .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
