@@ -10,6 +10,8 @@
   body,html{
     /*font-family: "Hibana", sans-serif;*/
     background-color: #2B2C2E;
+
+   
   }
 
 /*--------------------/Обнуление, body--------------------*/
@@ -20,15 +22,19 @@
 section:first-child{
   padding: 70px 50px;
 }
-
+/* 
+section:not(:first-child){
+  zoom: 90%;
+}
+ */
 section{
-  padding: 80px 50px 20px;
+  padding: 50px 50px;
 }
 ._conteiner{
   font-family: 'Montserrat', sans-serif;
   margin: 0 auto;
   max-width: 1200px;
- /*  border: 3px solid rgb(255, 130, 47);  */
+  /* border: 3px solid rgb(255, 130, 47);  */
   color: #CACACA;
 }
 /*--------------------/Общие стили--------------------*/
@@ -227,7 +233,9 @@ section{
 .about__block{
   color: #CACACA;
   display: flex;
-  gap: 100px;
+  /* gap: 100px; */
+  margin-top: 40px;
+  justify-content: space-between;
 }
 
 .ab_title h2{
@@ -239,13 +247,11 @@ section{
 }
 
 .about__block_content{
-  width: 100%;
   max-width: 653px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 15px 0 25px;
+  margin: 15px 0 25px 60px;
 }
 .ab_text{
   line-height: 30px;
@@ -255,9 +261,6 @@ section{
     font-size: 18px;
 }
 
-.ab_img{
-  max-height: 582px;
-}
 .ab_img img{
   width: 100%;
   max-width: 480px;
@@ -333,7 +336,9 @@ section{
 /*-----------------/Блок 3 (преимущества)----------------*/
 
 /*-----------------Блок 4 (мастера)----------------*/
-
+.masters_block4{
+  margin-bottom: 80px;
+}
 .masters_b4__title h2 {
   text-align: center;
   font-size: 48px;
@@ -341,11 +346,11 @@ section{
   letter-spacing: 3px;
   
   color: #92AF3E;  
-  padding-bottom: 80px;
+  padding-bottom: 100px;
   text-shadow: 9px 13.7px 7px rgba(0, 0, 0, 0.4);
 }
 
-/*-----------------/Блок 4 (мастера)----------------*/
+
 
 .wrapper {
   max-width: 1200px;
@@ -440,3 +445,124 @@ section{
     grid-auto-columns: 100%;
   }
 }
+
+/*-----------------/Блок 4 (мастера)----------------*/
+
+
+/*-----------------Блок 5 (прайс)----------------*/
+
+.price__screen{   
+  background: url(../img/fon-price.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.price{
+  margin: 70px auto 140px;
+}
+.price_title{
+  text-align: left;
+  font-size: 46px;
+  font-weight: 400;
+  letter-spacing: 2%;
+  text-transform: uppercase;
+  color: #FFFFFF;  
+  padding-bottom: 32px;
+  text-shadow: 10px 14px 8px rgba(0, 0, 0, 0.5);
+}
+
+.price_table{
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.price__content{
+display: flex;
+flex-direction: column;
+}
+.price_table .left{
+  flex: 1.285;
+}
+
+.price_table .reight{
+  flex: 1;    
+}
+
+
+.price__card{   
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: content;
+
+  background: rgba(49, 50, 54, 0.7);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-radius: 10px;
+}
+
+.price__content div:first-child{    
+  margin-bottom: 30px;
+}
+
+.card__line{
+  display: flex;
+  flex-wrap:wrap;
+  margin-bottom: 8px;
+  color: #FFFFFF;
+  font-size: 18px;
+  align-items: start;
+}
+
+.left .card__line{
+  min-width: 430px;
+}
+.reight .card__line{
+  min-width: 328px;    
+}
+
+.card__line hr{
+  padding-top: 18px;
+}
+
+.card__line p:first-child{
+  white-space: nowrap;
+  font-weight: 400;
+  /* width: min-content; */
+  
+}
+.card__line p:last-child{      
+  text-align: end;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.card__line hr{
+  border: none;
+  flex: 1;
+  border-bottom: 1px solid #888888 ;
+  min-width: 30px;
+  margin: 0 10px;
+}
+
+.card__line div{    
+  width: 100%;    
+  padding: 3px 0 0;
+  color: #CACACA;
+  font-size: 14px;
+  font-weight: 300;
+  /* line-height: 1; */
+  /* width: -webkit-fill-available; */
+}
+
+
+.card__title {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+}
+/*-----------------/Блок 5 (прайс)----------------*/
