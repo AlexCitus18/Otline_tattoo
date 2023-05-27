@@ -23,7 +23,7 @@ if (menu && menuBtn) {
 
 /* плавный скролл по ссылкам */
 
-const anchors = document.querySelectorAll('a[href*="#"]');
+/* const anchors = document.querySelectorAll('a[href*="#"]');
 
 anchors.forEach(anchor => {
 	anchor.addEventListener('click', event => {
@@ -36,7 +36,7 @@ anchors.forEach(anchor => {
 			block: 'start'
 		})
 	})
-})
+}) */
 
 
 /* -----------СЛАЙДЕР-----------*/
