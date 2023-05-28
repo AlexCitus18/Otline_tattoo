@@ -34,7 +34,7 @@ section{
   font-family: 'Montserrat', sans-serif;
   margin: 0 auto;
   max-width: 1200px;
-  /* border: 3px solid rgb(255, 130, 47);  */
+ /*  border: 3px solid rgb(255, 130, 47);  */
   color: #CACACA;
 }
 /*--------------------/Общие стили--------------------*/
@@ -566,3 +566,134 @@ flex-direction: column;
   color: #FFFFFF;
 }
 /*-----------------/Блок 5 (прайс)----------------*/
+
+/*-----------------Блок 6 (FAQ)-----676-----------*/
+
+.FAQ-title h2{
+  text-align: right;
+  font-size: 46px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #FFFFFF;  
+  text-shadow: 10px 14px 8px rgba(0, 0, 0, 0.5);
+  margin-top: 50px;
+}
+
+.FAQ{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.FAQ-img{
+  width: 676px;
+  height: 676px;
+  position: inherit;
+  left: -100px;
+  top: -30px;
+}
+
+.FAQ-img img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.FAQ-accordion{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 100px;
+  position: absolute;
+  width: 100%;
+}
+
+.accordion{
+  display: flex;
+  flex-direction: column;
+  max-width: 756px;
+  width: 100%;
+  color: #C6C6C6;
+}
+
+.accordion__title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 2px solid #4B4D53;
+  border-top: none;
+}
+
+.accordion__title:hover{
+  background-color: #4B4D53;
+}
+.accordion__title.active{
+  background-color: #4B4D53;
+}
+.accordion__title h3{
+  font-weight: 500;
+  font-size: 24px;
+}
+
+
+
+.accordion__title span{
+  display: inline-flex;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  transform: rotate(0);
+}
+
+.accordion__title.active span::after{
+  display: none;
+}
+.accordion__title span::before{
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #a1a3a5;
+}
+
+.accordion__title span::after{
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 28px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #a1a3a5;
+}
+
+.accordion__content{
+  font-size: 20px;
+  line-height: 1.3;
+  overflow: hidden;
+  padding: 0 20px;
+  box-sizing: content-box;
+  border-top: none;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out, opacity 0.1s ease-out 0.5s, visibility 0.1s ease-out 0.5s;
+}
+
+.accordion__content.active{
+  visibility: visible;
+  opacity: 1;
+  padding: 20px;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out, opacity 0.1s ease-out, visibility 0.1s ease-out;
+  background-color: #4b4d532a;
+}
+
+.accordion__content ol{
+  padding-left: 20px;
+}
+
+/*-----------------/Блок 6 (FAQ)----------------*/
