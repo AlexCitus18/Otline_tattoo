@@ -9,8 +9,8 @@
   }
   body,html{
     /*font-family: "Hibana", sans-serif;*/
-    background-color: #2B2C2E;
-
+    /* background-color: #2B2C2E; */
+    background-color: #212227;
    
   }
 
@@ -697,3 +697,97 @@ flex-direction: column;
 }
 
 /*-----------------/Блок 6 (FAQ)----------------*/
+
+/*------------------Блок 7 (Галерея)----------------*/
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap: 30px;
+}
+img{
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.gallery{
+width: 100%;
+display: block;
+min-height: 100vh;
+padding: 100px 0;
+}
+
+.container{
+ max-width: 1620px;
+ margin:auto;
+}
+
+.gallery .gallery-filter{
+width: 100%;
+text-align: center;
+margin-bottom: 40px;
+}
+.gallery .gallery-filter .filter-item{
+color: #ffffff;
+font-size: 17px;
+border: 2px solid #92AF3E;
+display: inline-block;
+margin-right: 8px;
+cursor: pointer;
+padding: 8px 20px 8px 20px;
+line-height: 1.2;
+transition: all 0.3s ease;
+}
+
+.gallery .gallery-filter .filter-item.active{
+color: white;
+border-color : #92AF3E;
+background: #92AF3E;
+}
+
+.gallery .gallery-item-inner img{
+object-fit: cover;
+height: 300px;
+width: 300px;
+}
+.gallery .gallery-item.show{
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn{
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+
+.gallery .gallery-item.hide{
+  display: none;
+}
+
+@media(max-width: 667px){
+  .gallery .gallery-filter .filter-item{
+      margin-bottom: 10px;
+  }
+}
+
+
+.gallery .gallery-item-inner img{
+transform:scale(0.95);  
+transition-duration: 0.5s; 
+opacity: 0.8; /* 
+margin: 0 10px 5px 0;  */
+cursor: pointer;
+}
+
+.gallery .gallery-item-inner img:hover{
+transform:scale(1.1);
+box-shadow:0px 0px 80px rgb(25, 25, 25);
+opacity: 1;
+}
+
+
+/*-----------------/Блок 7 (Галерея)----------------*/
