@@ -583,6 +583,7 @@ flex-direction: column;
   display: flex;
   justify-content: space-between;
   position: relative;
+  height: 640px;
 }
 
 .FAQ-img{
@@ -700,6 +701,25 @@ flex-direction: column;
 
 /*------------------Блок 7 (Галерея)----------------*/
 
+.gallery-title h2{
+  text-align: center;
+  font-size: 46px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #FFFFFF;  
+  text-shadow: 10px 14px 8px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-title h3{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color:#92AF3E;  
+  text-shadow: 10px 14px 8px rgba(0, 0, 0, 0.5);
+  margin: 14px 0 60px 0;
+}
+
 .row{
   display: flex;
   flex-wrap: wrap;
@@ -711,32 +731,25 @@ img{
   vertical-align: middle;
 }
 
-.gallery{
-width: 100%;
-display: block;
-min-height: 100vh;
-padding: 100px 0;
-}
-
 .container{
  max-width: 1620px;
- margin:auto;
+ margin:0 auto;
+ font-family: 'Montserrat', sans-serif;
 }
 
 .gallery .gallery-filter{
 width: 100%;
 text-align: center;
-margin-bottom: 40px;
+margin-bottom: 70px;
 }
 .gallery .gallery-filter .filter-item{
 color: #ffffff;
-font-size: 17px;
+font-size: 20px;
 border: 2px solid #92AF3E;
 display: inline-block;
-margin-right: 8px;
+margin-right: 14px;
 cursor: pointer;
 padding: 8px 20px 8px 20px;
-line-height: 1.2;
 transition: all 0.3s ease;
 }
 
