@@ -8,10 +8,12 @@
     box-sizing: border-box;
   }
   body,html{
-    /*font-family: "Hibana", sans-serif;*/
     /* background-color: #2B2C2E; */
-    background-color: #212227;
-   
+    /* background-color: #212227; */
+    background-color: #292A2D;
+    background-image: url(../img/фонконтакт.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
   }
 
 /*--------------------/Обнуление, body--------------------*/
@@ -804,3 +806,136 @@ opacity: 1;
 
 
 /*-----------------/Блок 7 (Галерея)----------------*/
+
+.form {
+  max-width: 950px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+form{
+  max-width: 630px;
+  margin: 0 auto;
+  text-align: center;
+}
+input {
+  color:white;
+  font-weight:500;
+  font-size: 18px;
+  background-color: transparent;
+  border:2px solid #92AF3E;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+input[type="checkbox"]{
+  margin-bottom: 0px;
+}
+input::placeholder { 
+  color:#ffffff;
+}
+
+input[type="text"]:focus ,
+input[type="tel"]:focus { 
+  border:2px solid #ABCC4A;
+  box-shadow: 0px 0px 12px 3px rgb(25, 25, 25);
+  transform:scale(1.02, 1.02);
+  background-color: rgba(255, 255, 255, 0.063);
+ }
+
+
+[type="submit"] {
+  
+  background:#92AF3E;
+  border:0;
+  cursor:pointer;
+  color:#313234;
+  transition: all 0.3s;
+
+  padding: 12px 37px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  width: 196px;
+  height: 47px;
+  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);
+}
+
+[type="submit"]:hover { background:#ABCC4A; }
+
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #1f1f1f;
+  transform:scale(1.02, 1.02);
+}
+
+legend{
+  text-transform: uppercase;
+  color: #fff;  
+  font-size: 20px;
+  text-align: left;
+  letter-spacing: 0.6px;
+  margin: 20px 0px;
+}
+
+.choice div{
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.choice div:last-child{
+  padding-bottom: 20px;
+}
+
+label{
+  margin-left: 17px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  font-weight: 300;
+}
+input[type="checkbox"]{
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="checkbox"]::before {
+    /* content: "🗸"; */
+    font-size: 30px;
+    color: #d6d6cd;
+    position: absolute;
+    opacity: 0;
+    transition: .1s ease-in;
+    z-index: 1;
+    left: 2px;
+    bottom: -5px;
+    content: "✓";
+}
+
+input[type="checkbox"]:checked::before {
+    opacity: 1;
+}
+
+
+/*------------------footer----------------*/
+
+footer{
+  /* background-image: url(../img/фонконтакт.png) no-repeat;
+  background-position: center center;
+  background-size: cover; */
+  /* height: 1800px;
+  background: url(../img/фонконтакт.png) no-repeat;
+  background-position: center center;
+  background-size: cover; */
+}
+/*-----------------/footer----------------*/
