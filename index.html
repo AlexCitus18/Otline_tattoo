@@ -28,7 +28,7 @@
                     <li class="menu__item"><a href="#price" class="menu__link">прайс</a></li>
                     <li class="menu__item"><a href="#masters" class="menu__link">мастера</a></li>
                     <li class="menu__item"><a href="#gallery" class="menu__link">работы</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">контакты</a></li>
+                    <li class="menu__item"><a href="#contact" class="menu__link">контакты</a></li>
                 </ul>
             </nav>
         </div>
@@ -608,48 +608,84 @@
                <span class="input__file-icon-wrapper"><img src="img/download.svg" alt="Выбрать файл"></span>
                <span class="input__file-button-text">Выбрать файл</span>
             </label>
+
           </div>
 
           <button type="submit">Записаться</button>
               
-          <p>Нажимая на кнопку, Вы даете согласие на обработку персональных данных и соглашаетесь c <a title="Правила политики конфиденциальности сайта" href="#" id="link-form">политикой конфиденциальности</a></p>
-
-
+          <p>Нажимая на кнопку, Вы даете согласие на обработку персональных данных и соглашаетесь c 
+          <a title="Правила политики конфиденциальности сайта" href="#" id="link-form">политикой конфиденциальности</a>
+          </p>
+        
         </form>
       </div>
     </section>
+    
+    <div class="running_line">
+      <p class="running_line_marquee">Outline Tattoo Studio - Outline Tattoo Studio - Outline Tattoo Studio - Outline Tattoo Studio - Outline Tattoo Studio - Outline Tattoo Studio - </div>
+    </div>
 
-    <section>
-      <div class="container"> 
-        <div class="gallery-title">
+    <section id="contact">
+      <div class="contact__block _conteiner">
+        <div class="contact__block_left">
+  
           <h2>Контакты</h2>
-          <h3>Выберите интересующее вас направление</h3>
+
+          <div class="contact_content">
+            <div class="contact_info">
+                <div>Ростов-на-Дону, Газетный пер., 55а</div>
+                <div>
+                  <div class="contact_info-row">
+                    <span>Понедельник - Пятница</span>
+                    <span>9:00 - 23:00</span>
+                  </div>
+                  <div class="contact_info-row">
+                    <span>Суббота - Воскресенье</span>
+                    <span>9:00 - 21:00</span>
+                  </div>
+                  <div class="contact_info-row"></div>
+                </div>
+                <div >+7 (989) 535-98-75</div>
+            </div>
+          
+            <h3>Дополнительную информацию о нас<br>Вы можете узнать в социальных сетях</h3>
+            
+            <div class="footer__socials">
+              <a class="social_inst" href="#"><img src="img/inst.svg" alt=""></a>
+              <a class="social_vk" href="#"><img src="img/vk.svg" alt=""></a>
+              <a class="social_tgm" href="#"><img src="img/tg.svg" alt=""></a>
+            </div>
+          </div>
+            
         </div>
+
+        <div style="position:relative;overflow:hidden;">
+          <a href="https://yandex.ru/maps/org/outline_tattoo/219580088628/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Outline Tattoo</a><a href="https://yandex.ru/maps/39/rostov-na-donu/category/tattoo_studio/184105820/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Тату-салон в Ростове‑на‑Дону</a><a href="https://yandex.ru/maps/39/rostov-na-donu/category/piercing_studio/30981681208/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Пирсинг-салон в Ростове‑на‑Дону</a><iframe src="https://yandex.ru/map-widget/v1/?l=night&ll=39.713019%2C47.223355&mode=search&oid=219580088628&ol=biz&z=17" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        </div>
+
       </div>
     </section>
 
 </main>
 
-<footer></footer>
+<footer>
+
+	  <nav class="footer__navi container">
+      <ul class="menu__list">
+          <li class="menu__item"><a href="#price" class="menu__link">прайс</a></li>
+          <li class="menu__item"><a href="#masters" class="menu__link">мастера</a></li>
+          <li class="menu__item"><a href="#gallery" class="menu__link">работы</a></li>
+          <li class="menu__item"><a href="#contact" class="menu__link">контакты</a></li>
+      </ul>
+    </nav>
+		<div class="footer__copy container">&copy; Outline tattoo, 2023. Все права защищены.</div>
+
+</footer>
 
 <script src="js/script.js"></script>
 <script>
-  let inputs = document.querySelectorAll('.input__file');
-  Array.prototype.forEach.call(inputs, function (input) {
-    let label = input.nextElementSibling,
-      labelVal = label.querySelector('.input__file-button-text').innerText;
+  
 
-    input.addEventListener('change', function (e) {
-      let countFiles = '';
-      if (this.files && this.files.length >= 1)
-        countFiles = this.files.length;
-
-      if (countFiles)
-        label.querySelector('.input__file-button-text').innerText = 'Выбрано файлов: ' + countFiles;
-      else
-        label.querySelector('.input__file-button-text').innerText = labelVal;
-    });
-  });
 </script>
 
 </body>

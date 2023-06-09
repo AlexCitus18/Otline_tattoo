@@ -36,7 +36,7 @@ section{
   font-family: 'Montserrat', sans-serif;
   margin: 0 auto;
   max-width: 1200px;
- /*  border: 3px solid rgb(255, 130, 47);  */
+  /* border: 3px solid rgb(255, 130, 47);  */
   color: #CACACA;
 }
 /*--------------------/Общие стили--------------------*/
@@ -74,7 +74,6 @@ section{
 .menu__link {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
-  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #fff;
@@ -155,7 +154,7 @@ section{
   font-size: 116px;
   font-weight: 600;
   width: 520px;
-
+  color: white;
   background-image: url(../img/Outline11.png);
   background-position:top;
   background-repeat: no-repeat;
@@ -171,6 +170,7 @@ section{
   font-weight: 500;
   text-align: right;
   padding: 15px 0 25px;
+  color: white;
 }
 
 .fs_left__name p{
@@ -201,9 +201,10 @@ section{
 
 
 .fs_left__contact{
+  color: #E7E7E7;
   width: 240px;
   text-align: center;
-  margin-bottom: 43px;
+  margin: 100px 0 30px;
 }
 
 .fs_left__contact p:first-child{
@@ -807,6 +808,8 @@ opacity: 1;
 
 /*-----------------/Блок 7 (Галерея)----------------*/
 
+/*-----------------Блок 8 (Форма обратной связи)----------------*/
+
 .form {
   max-width: 950px;
   padding: 40px;
@@ -906,8 +909,7 @@ input[type="checkbox"]:checked::before {
   opacity: 1;
 }
 
-[type="submit"] {
-  
+button[type="submit"] {  
   background:#92AF3E;
   border:0;
   cursor:pointer;
@@ -920,16 +922,12 @@ input[type="checkbox"]:checked::before {
   font-weight: 600;
   box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.3);
 }
+/*-----------------Блок 8 (Выбор файла)----------------*/
 
-[type="submit"]:hover { background:#ABCC4A; }
-
-
-/*------------------footer----------------*/
- 
 .input__file {
   opacity: 0;
   visibility: hidden;
-  position: absolute;
+  position: fixed;
 }
  
 .input__file-icon-wrapper {
@@ -948,29 +946,138 @@ input[type="checkbox"]:checked::before {
   margin-left: 0px;
   
 }
+/*----------------/Блок 8 (Выбор файла)----------------*/
 
 .form p{
-  color: #a1a3a5;
+  color: #CACACA;
 }
 
-/* #link-form a:link,a:visited  {
-  color: #cbced2;
-} */
 .form a,.form a:visited {
-  color: #cbced2;
+  color: #CACACA;
 }
 
 .form a:hover,.form a:active {
   color: #92AF3E;
 }
 
-footer{
-  /* background-image: url(../img/фонконтакт.png) no-repeat;
-  background-position: center center;
-  background-size: cover; */
-  /* height: 1800px;
-  background: url(../img/фонконтакт.png) no-repeat;
-  background-position: center center;
-  background-size: cover; */
+/*-----------/Блок 8 (Форма обратной связи)-----------*/
+
+/*-----------Бегущая строка-----------*/
+
+.running_line {
+  text-transform: uppercase;
+  font-family: MM, sans-serif;
+  color: #cacaca;
+  border-top: 1px solid #cacaca;
+  border-bottom: 1px solid #cacaca;
+  font-size: 36px;
+  overflow: hidden;
+  padding: 5px 0;
+  margin: 60px 0;
 }
+
+.running_line_marquee{
+  
+  white-space: nowrap;
+  animation: marquee 14s infinite linear;
+}
+.running_line_marquee:after{
+  content: "Outline Tattoo Studio - Outline Tattoo Studio - Outline Tattoo Studio - Outline Tattoo Studio - Outline Tattoo Studio - Outline Tattoo Studio - ";
+}
+
+@keyframes marquee{
+  0% {
+      transform: translateX(0)
+  }
+  100% {
+      transform: translateX(-40%)
+  }
+}
+
+/*-----------/Бегущая строка-----------*/
+
+/*------------Блок 9 (Контакты)-----------*/
+
+.contact__block{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  
+  max-width: 1064px;
+}
+
+.contact__block_left h2 {
+  font-size: 46px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 10px 14px 8px rgba(0, 0, 0, 0.5);
+}
+
+.contact__block_left h3 {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+}
+
+.contact_content{
+  min-width: 420px;
+  margin: 40px 28px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+}
+.contact_info{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+}
+.footer__socials a{
+  margin-right: 20px;
+}
+/*-----------/Блок 9 (Контакты)-----------*/
+
+
+/*------------------footer----------------*/
+ 
+.menu__list {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+.menu__link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #fff;
+  text-decoration: none;    
+  transition: 0.3s;
+}
+
+.menu__link:hover {
+  color: #ABCC4A;
+}
+
+footer {
+  padding: 30px 0 40px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.footer__navi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 18px
+}
+
+.footer__copy {
+  text-align: center;
+  color: #CACACA;
+  letter-spacing: 0.6px;
+}
+
 /*-----------------/footer----------------*/
