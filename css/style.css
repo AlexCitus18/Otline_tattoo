@@ -817,23 +817,23 @@ form{
   max-width: 630px;
   margin: 0 auto;
   text-align: center;
+  letter-spacing: 0.6px;
 }
 input {
+  font-family: 'Montserrat', sans-serif;
   color:white;
-  font-weight:500;
-  font-size: 18px;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 1.6px;
   background-color: transparent;
   border:2px solid #92AF3E;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
   width:100%;
-  box-sizing: border-box;
   outline:0;
 }
-input[type="checkbox"]{
-  margin-bottom: 0px;
-}
+
 input::placeholder { 
   color:#ffffff;
 }
@@ -843,43 +843,22 @@ input[type="tel"]:focus {
   border:2px solid #ABCC4A;
   box-shadow: 0px 0px 12px 3px rgb(25, 25, 25);
   transform:scale(1.02, 1.02);
-  background-color: rgba(255, 255, 255, 0.063);
+  background-color: rgba(255, 255, 255, 0.08);
  }
 
-
-[type="submit"] {
-  
-  background:#92AF3E;
-  border:0;
-  cursor:pointer;
-  color:#313234;
-  transition: all 0.3s;
-
-  padding: 12px 37px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  width: 196px;
-  height: 47px;
-  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);
-}
-
-[type="submit"]:hover { background:#ABCC4A; }
-
-
-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px #1f1f1f;
-  transform:scale(1.02, 1.02);
-}
-
-legend{
+form h3{
   text-transform: uppercase;
+  font-weight: 400;
   color: #fff;  
   font-size: 20px;
   text-align: left;
   letter-spacing: 0.6px;
   margin: 20px 0px;
+}
+
+#form-file{
+  text-transform: none;
+  font-weight: 300;
 }
 
 .choice div{
@@ -898,36 +877,92 @@ label{
   cursor: pointer;
   color: #FFFFFF;
   font-size: 16px;
-  letter-spacing: 0.6px;
   font-weight: 300;
 }
 input[type="checkbox"]{
-    appearance: none;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    position: relative;
+  margin-bottom: 0px;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+  padding: 0px;
 }
 
 input[type="checkbox"]::before {
-    /* content: "🗸"; */
-    font-size: 30px;
-    color: #d6d6cd;
-    position: absolute;
-    opacity: 0;
-    transition: .1s ease-in;
-    z-index: 1;
-    left: 2px;
-    bottom: -5px;
-    content: "✓";
+  content: "🗸";
+  font-size: 34px;
+  color: #fff;
+  position: absolute;
+  opacity: 0;
+  transition: .1s ease-in;
+  z-index: 1;
+  left: 2px;
+  bottom: -10px;
+  /* content: "✓"; */
 }
 
 input[type="checkbox"]:checked::before {
-    opacity: 1;
+  opacity: 1;
 }
+
+[type="submit"] {
+  
+  background:#92AF3E;
+  border:0;
+  cursor:pointer;
+  color:#313234;
+  transition: all 0.3s;
+  margin: 20px 0 30px;
+  padding: 12px 37px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.3);
+}
+
+[type="submit"]:hover { background:#ABCC4A; }
 
 
 /*------------------footer----------------*/
+ 
+.input__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+ 
+.input__file-icon-wrapper {
+  height: 24px;
+  width: 24px;
+  margin-right: 20px;
+}
+ 
+.input__file-button {
+  width: 100%;
+  max-width: 240px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 0px;
+  
+}
+
+.form p{
+  color: #a1a3a5;
+}
+
+/* #link-form a:link,a:visited  {
+  color: #cbced2;
+} */
+.form a,.form a:visited {
+  color: #cbced2;
+}
+
+.form a:hover,.form a:active {
+  color: #92AF3E;
+}
 
 footer{
   /* background-image: url(../img/фонконтакт.png) no-repeat;

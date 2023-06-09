@@ -583,10 +583,11 @@
         <form>      
           <input name="name" type="text" placeholder="Имя" />   
           <input name="phone" type="tel" placeholder="+7(777) 777-77-77" />
-
-          <legend>предпочтительный способ связи</legend>
-
+          
           <div class="choice">
+
+            <h3>предпочтительный способ связи</h3>
+
             <div>
               <input type="checkbox" id="choice-1">
               <label for="choice-1">мы вам перезвоним</label>
@@ -598,11 +599,22 @@
             <div>
               <input type="checkbox" id="choice-3">
               <label for="choice-3">мы напишем в telegram</label>
-            </div>
+            </div>                  
+
+            <h3 id="form-file">Прикрепите файлом эскиз желаемой татуировки</h3>
+
+            <input type="file" id="input__file" class="input__file" accept=".jpg, .png" multiple>
+            <label for="input__file" class="input__file-button">
+               <span class="input__file-icon-wrapper"><img src="img/download.svg" alt="Выбрать файл"></span>
+               <span class="input__file-button-text">Выбрать файл</span>
+            </label>
           </div>
-          
 
           <button type="submit">Записаться</button>
+              
+          <p>Нажимая на кнопку, Вы даете согласие на обработку персональных данных и соглашаетесь c <a title="Правила политики конфиденциальности сайта" href="#" id="link-form">политикой конфиденциальности</a></p>
+
+
         </form>
       </div>
     </section>
@@ -621,6 +633,24 @@
 <footer></footer>
 
 <script src="js/script.js"></script>
+<script>
+  let inputs = document.querySelectorAll('.input__file');
+  Array.prototype.forEach.call(inputs, function (input) {
+    let label = input.nextElementSibling,
+      labelVal = label.querySelector('.input__file-button-text').innerText;
+
+    input.addEventListener('change', function (e) {
+      let countFiles = '';
+      if (this.files && this.files.length >= 1)
+        countFiles = this.files.length;
+
+      if (countFiles)
+        label.querySelector('.input__file-button-text').innerText = 'Выбрано файлов: ' + countFiles;
+      else
+        label.querySelector('.input__file-button-text').innerText = labelVal;
+    });
+  });
+</script>
 
 </body>
 </html>
