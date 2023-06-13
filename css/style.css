@@ -579,35 +579,22 @@ flex-direction: column;
   text-transform: uppercase;
   color: #FFFFFF;  
   text-shadow: 10px 14px 8px rgba(0, 0, 0, 0.5);
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .FAQ{
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  height: 640px;
+  min-height: 600px;
+  background-image: url(../img/faq.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 600px auto;
 }
 
-.FAQ-img{
-  width: 676px;
-  height: 676px;
-  position: inherit;
-  left: -100px;
-  top: -30px;
-}
-
-.FAQ-img img{
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
 .FAQ-accordion{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   padding-top: 100px;
-  position: absolute;
   width: 100%;
 }
 
