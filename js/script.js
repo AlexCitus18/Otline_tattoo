@@ -1,5 +1,6 @@
 const menu = document.querySelector('.menu__body')
 const menuBtn = document.querySelector('.menu__icon')
+const icon = document.querySelector('.fs_tatto')
 
 const body = document.body;
 
@@ -7,6 +8,7 @@ if (menu && menuBtn) {
 	menuBtn.addEventListener('click', e => {
 		menu.classList.toggle('active')
 		menuBtn.classList.toggle('active')
+    icon.classList.toggle('active')
 		body.classList.toggle('lock')
 	})
 
@@ -16,6 +18,7 @@ if (menu && menuBtn) {
       link.addEventListener('click', () => {
           menu.classList.remove('active')
           menuBtn.classList.remove('active')
+          icon.classList.toggle('active')
           body.classList.remove('lock')
       })
     })

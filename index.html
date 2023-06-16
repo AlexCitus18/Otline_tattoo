@@ -19,10 +19,10 @@
 
         <div class="header__menu menu">
             <div class="menu__icon">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
+				      <span></span>
+				      <span></span>
+				      <span></span>
+			      </div>
             <nav class="menu__body">
                 <ul class="menu__list">
                     <li class="menu__item"><a href="#about" class="menu__link">о нас</a></li>
@@ -45,17 +45,25 @@
             <div class="fs_left">
                 <div class="fs_left__name">
                     <h1>Tattoo</h1>
-                    <h2>-  здесь оживают ваши мечты !</h2>
-                    <p>Запишись к нам на <span>бесплатную консультацию</span> и получи <span>скидку 15%</span> на первый сеанс тату</p>
-                    <a href="">Записаться</a> 
+                    <h2>-  здесь оживают ваши&nbspмечты&nbsp!</h2>
+                    <p>Запишись к нам на <span>бесплатную консультацию</span> и&nbspполучи <span>скидку&nbsp15%</span> на первый сеанс тату</p>
+                    <div><a href="#sub_form">Записаться</a></div>
                 </div>
                 
                 <div class="fs_left__contact">
-                    <p>Вы можете свяваться с нами по телефону</p>
-                    <p>+7 (989) 535-98-75</p>
+                    <p>Вы можете свяваться с нами по&nbspтелефону</p>
+                    <p>+7 (928) 629-53-07</p>
                 </div>              
             </div>
-            <div class="fs_reight"><img src="img/tatto_b1.png" alt=""></div>
+            <div class="fs_reight">
+              <img src="img/tatto_b1.png" id="fs_tatto" alt="">
+              <div class="fs_tatto">
+                <a class="social_inst" href="https://www.instagram.com/outline_rostov_tattoo/"><img src="img/inst.svg" alt=""></a>
+                <a class="social_vk" href="https://vk.com/outlinetattoo"><img src="img/vk.svg" alt=""></a>
+                <a class="social_tgm" href="https://t.me/Citrus_Omega"><img src="img/tg.svg" alt=""></a>
+              </div>
+            </div>
+            
         </div>
         
     </section>
@@ -573,7 +581,7 @@
       </div>
     </section> 
     
-    <section>
+    <section id="sub_form">
       <div class="form container"> 
         <div class="gallery-title">
           <h2>Бесплатная консультация</h2>
@@ -581,8 +589,8 @@
         </div>
 
         <form>      
-          <input name="name" type="text" placeholder="Имя" />   
-          <input name="phone" type="tel" placeholder="+7(777) 777-77-77" />
+          <input name="name" type="text" placeholder="Имя" required/>   
+          <input name="phone" type="tel" placeholder="+7(777) 777-77-77" required/>
           
           <div class="choice">
 
@@ -603,7 +611,7 @@
 
             <h3 id="form-file">Прикрепите файлом эскиз желаемой татуировки</h3>
 
-            <input type="file" id="input__file" class="input__file" accept=".jpg, .png" multiple>
+            <input type="file" id="input__file" class="input__file" accept=".jpg, .png" required multiple>
             <label for="input__file" class="input__file-button">
                <span class="input__file-icon-wrapper"><img src="img/download.svg" alt="Выбрать файл"></span>
                <span class="input__file-button-text">Выбрать файл</span>
@@ -613,8 +621,8 @@
 
           <button type="submit">Записаться</button>
               
-          <p>Нажимая на кнопку, Вы даете согласие на обработку персональных данных и соглашаетесь c 
-          <a title="Правила политики конфиденциальности сайта" href="#" id="link-form">политикой конфиденциальности</a>
+          <p>Нажимая на кнопку, Вы даете согласие на обработку персональных данных&nbspи&nbspсоглашаетесь c 
+          <a title="Правила политики конфиденциальности сайта" href="#" id="link-form">политикой&nbspконфиденциальности</a>
           </p>
         
         </form>
@@ -635,7 +643,7 @@
             <div class="contact_info">
                 <div>Ростов-на-Дону, Газетный пер., 55а</div>
                 <div>
-                  <div class="contact_info-row">
+                  <div class="contact_info-row b">
                     <span>Понедельник - Пятница</span>
                     <span>9:00 - 23:00</span>
                   </div>
@@ -643,17 +651,16 @@
                     <span>Суббота - Воскресенье</span>
                     <span>9:00 - 21:00</span>
                   </div>
-                  <div class="contact_info-row"></div>
                 </div>
-                <div >+7 (989) 535-98-75</div>
+                <div >+7 (928) 629-53-07</div>
             </div>
           
             <h3>Дополнительную информацию о нас<br>Вы можете узнать в социальных сетях</h3>
             
             <div class="footer__socials">
-              <a class="social_inst" href="#"><img src="img/inst.svg" alt=""></a>
-              <a class="social_vk" href="#"><img src="img/vk.svg" alt=""></a>
-              <a class="social_tgm" href="#"><img src="img/tg.svg" alt=""></a>
+              <a class="social_inst" href="https://www.instagram.com/outline_rostov_tattoo/"><img src="img/inst.svg" alt=""></a>
+              <a class="social_vk" href="https://vk.com/outlinetattoo"><img src="img/vk.svg" alt=""></a>
+              <a class="social_tgm" href="https://t.me/Citrus_Omega"><img src="img/tg.svg" alt=""></a>
             </div>
           </div>
             
@@ -671,12 +678,12 @@
 <footer>
 
 	  <nav class="footer__navi container">
-      <ul class="menu__list">
-          <li class="menu__item"><a href="#about" class="menu__link">о нас</a></li>
-          <li class="menu__item"><a href="#price" class="menu__link">прайс</a></li>
-          <li class="menu__item"><a href="#masters" class="menu__link">мастера</a></li>
-          <li class="menu__item"><a href="#gallery" class="menu__link">работы</a></li>
-          <li class="menu__item"><a href="#contact" class="menu__link">контакты</a></li>
+      <ul class="menu__list_f" id="link_f">
+          <li class="menu__item_f"><a href="#about" class="menu__link f">о нас</a></li>
+          <li class="menu__item_f"><a href="#price" class="menu__link f">прайс</a></li>
+          <li class="menu__item_f"><a href="#masters" class="menu__link f">мастера</a></li>
+          <li class="menu__item_f"><a href="#gallery" class="menu__link f">работы</a></li>
+          <li class="menu__item_f"><a href="#contact" class="menu__link f">контакты</a></li>
       </ul>
     </nav>
 		<div class="footer__copy container">&copy; Outline tattoo, 2023. Все права защищены.</div>
